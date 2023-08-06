@@ -1,2 +1,2 @@
-# repository-icse
-This repository contains all codes for the conference paper ICSE # xxx.
+# Delta Debugging for Neural Networks
+This repository contains codes for the ICSE'24 submission 
