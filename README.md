@@ -1,7 +1,7 @@
 # Delta Debugging for Neural Networks
 This repository contains codes for the ICSE'24 submission 
 
-## Prerequisite (Py3 & TF2) 
+<!--## Prerequisite (Py3 & TF2) 
 
 The code is run successfully using **Python 3.9** and **Tensorflow 2.6**. 
 
