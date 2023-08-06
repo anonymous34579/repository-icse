@@ -117,11 +117,11 @@ class DeltaDebugging4NN:
         return NS_top_k_layer_indexes, NS_top_k_neuron_indexes
     
     
-    def egreedy(self, NS, K, epsilon=0.1, A=30): 
+    def egreedy(self, NS, K, epsilon=0.1): 
         flattened_NS = np.concatenate(NS)
-        topk_indexes = np.argsort(-flattened_NR)[:K]
-        topm_indexes = np.argsort(-flattened_NR)[K:A]
-        rands = np.random.random(6)
+        topk_indexes = np.argsort(-flattened_NR)[:A]
+        topm_indexes = np.argsort(-flattened_NR)[A:B]
+        rands = np.random.random(K)
         num_utilize = np.sum(rands > epsilon)
         num_explore = np.sum(rands <= epsilon)
         utilize_indexes = random.sample(list(topk_indexes), num_utilize)
